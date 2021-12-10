@@ -6,7 +6,7 @@ import Specialties from '../components/ContentSections/Specialties.jsx';
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 py-8 flex flex-col gap-10 justify-evenly bg-gray-900 text-gray-50 font-mono">
+    <div className="min-h-screen px-4 py-8 flex flex-col gap-10 justify-evenly bg-gray-900 text-gray-50 font-mono border-t-8 border-blue-500">
       <Head>
         <title>Andy McGunagle</title>
         <meta name="description" content="Andy McGunagle's Personal Website" />

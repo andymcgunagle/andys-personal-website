@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Logo({ src, alt, additionalStyles }) {
   return (
-    <div className={`p-6 bg-gray-600 rounded-full hover:-translate-y-1 hover:bg-gray-500 select-none ${additionalStyles}`}>
+    <div className={`p-6 bg-gray-600 rounded-full hover:bg-gray-500 select-none ${additionalStyles}`}>
       <div className="h-14 w-14 relative">
         <Image
           alt={`${alt} logo`}
@@ -27,7 +27,7 @@ export default function ContentSectionItem({ src, alt, url }) {
         <Logo
           src={src}
           alt={alt}
-          additionalStyles="active:translate-y-1 border-2 border-blue-500"
+          additionalStyles="active:translate-y-1 border-2 border-blue-500 hover:-translate-y-1 "
         />
       </a>
     );
