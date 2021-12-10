@@ -23,8 +23,10 @@ export default function Home() {
 
       <footer className="flex justify-center">
         <a
-          href="https://github.com/andymcgunagle/andys-personal-website"
           className="text-center cursor-pointer"
+          href="https://github.com/andymcgunagle/andys-personal-website"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           Check out the code for this site!
         </a>
