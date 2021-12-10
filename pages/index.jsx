@@ -16,7 +16,7 @@ export default function Home() {
         <Specialties />
         <MyProjects />
         <Connect />
-        <a href="#" className="text-center cursor-pointer">
+        <a href="https://github.com/andymcgunagle/andys-personal-website" className="text-center cursor-pointer">
           Check out the code for this site!
         </a>
       </main>
