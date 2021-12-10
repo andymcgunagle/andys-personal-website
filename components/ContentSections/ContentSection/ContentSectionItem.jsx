@@ -5,7 +5,7 @@ function Logo({ src, alt, additionalStyles }) {
     <div className={`p-6 bg-gray-600 rounded-full hover:-translate-y-1 hover:bg-gray-500 ${additionalStyles}`}>
       <div className="h-14 w-14 relative">
         <Image
-          alt={alt}
+          alt={`${alt} logo`}
           layout="fill"
           objectFit="contain"
           src={src}

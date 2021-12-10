@@ -3,7 +3,7 @@ import ContentSection from './ContentSection/ContentSection.jsx';
 const sites = [
   {
     name: "LinkedIn",
-    src: "/linkedin-logo.png",
+    src: "/the-linkedin-logo.png",
     url: "https://www.linkedin.com/in/andy-mcgunagle/",
   },
   {
