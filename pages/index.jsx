@@ -6,20 +6,29 @@ import Specialties from '../components/ContentSections/Specialties.jsx';
 
 export default function Home() {
   return (
-    <div className='overscroll-none'>
+    <div className="min-h-screen p-4 flex flex-col gap-2 justify-evenly bg-gray-900 text-gray-50 font-mono">
       <Head>
         <title>Andy McGunagle</title>
       </Head>
 
-      <main className="min-h-screen flex flex-col justify-evenly bg-gray-900 text-gray-50 font-mono gap-4 p-6">
+      <header>
         <HeadingAndAvatar />
+      </header>
+
+      <main className="flex flex-col font-mono gap-6">
         <Specialties />
         <MyProjects />
         <Connect />
-        <a href="https://github.com/andymcgunagle/andys-personal-website" className="text-center cursor-pointer">
+      </main>
+
+      <footer className="flex justify-center">
+        <a
+          href="https://github.com/andymcgunagle/andys-personal-website"
+          className="text-center cursor-pointer"
+        >
           Check out the code for this site!
         </a>
-      </main>
+      </footer>
     </div>
   );
 };
