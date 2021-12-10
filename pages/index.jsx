@@ -6,16 +6,18 @@ import Specialties from '../components/ContentSections/Specialties.jsx';
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-4 flex flex-col gap-2 justify-evenly bg-gray-900 text-gray-50 font-mono">
+    <div className="min-h-screen px-4 py-8 flex flex-col gap-10 justify-evenly bg-gray-900 text-gray-50 font-mono">
       <Head>
         <title>Andy McGunagle</title>
+        <meta name="description" content="Andy McGunagle's Personal Website" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
       <header>
         <HeadingAndAvatar />
       </header>
 
-      <main className="flex flex-col font-mono gap-6">
+      <main className="flex flex-col font-mono gap-10">
         <Specialties />
         <MyProjects />
         <Connect />
