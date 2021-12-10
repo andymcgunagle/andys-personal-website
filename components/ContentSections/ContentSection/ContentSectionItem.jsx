@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 function Logo({ src, alt, additionalStyles }) {
   return (
-    <div className={`p-6 bg-gray-600 rounded-full hover:-translate-y-1 hover:bg-gray-500 ${additionalStyles}`}>
+    <div className={`p-6 bg-gray-600 rounded-full hover:-translate-y-1 hover:bg-gray-500 select-none ${additionalStyles}`}>
       <div className="h-14 w-14 relative">
         <Image
           alt={`${alt} logo`}
