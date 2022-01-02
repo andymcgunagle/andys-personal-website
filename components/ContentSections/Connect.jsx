@@ -38,12 +38,17 @@ export default function Connect() {
       />
       <div className="flex flex-wrap justify-center items-center gap-2">
         <p>...or shoot me an email at</p>
-        <span
+        <div
           onClick={copyEmailAddress}
-          className="cursor-pointer"
+          className="flex items-center gap-2 cursor-pointer"
         >
-          amcgunagle@gmail.com
-        </span>
+          <p>
+            amcgunagle@gmail.com
+          </p>
+          <span class="material-icons text-sm">
+            content_copy
+          </span>
+        </div>
       </div>
       {
         confirmCopy ?
