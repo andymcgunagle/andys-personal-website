@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import ContentSection from './ContentSection/ContentSection.jsx';
 
 const sites = [
@@ -14,10 +15,43 @@ const sites = [
 ];
 
 export default function Connect() {
+  const [confirmCopy, setConfirmCopy] = useState(false);
+
+  const copyEmailAddress = (e) => {
+    navigator.clipboard.writeText("amcgunagle@gmail.com");
+    setConfirmCopy(true);
+  };
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setConfirmCopy(false);
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, [confirmCopy]);
+
   return (
-    <ContentSection
-      heading="Connect with me on..."
-      items={sites}
-    />
+    <div className="flex flex-col items-center gap-4">
+      <ContentSection
+        heading="Connect with me on..."
+        items={sites}
+      />
+      <div className="flex flex-wrap gap-2">
+        <p>...or shoot me an email at</p>
+        <span
+          onClick={copyEmailAddress}
+          className="cursor-pointer"
+        >
+          amcgunagle@gmail.com
+        </span>
+      </div>
+      {
+        confirmCopy ?
+          <p className="fixed top-4 bg-green-100 border-2 border-green-700 text-green-700 p-2 rounded-md animate-fade-out">
+            Email address copied 👍
+          </p>
+          : null
+      }
+    </div>
   );
 };

@@ -4,7 +4,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '90%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+      },
+      animation: {
+        'fade-out': 'fadeOut 3.05s linear',
+      },
+    },
   },
   plugins: [],
 }

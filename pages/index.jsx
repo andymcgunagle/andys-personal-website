@@ -7,7 +7,7 @@ import FixedMenuButton from "../components/FixedMenuButton.jsx";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 py-8 flex flex-col gap-10 justify-evenly font-mono border-t-8 border-blue-500">
+    <div className="min-h-screen px-4 py-8 flex flex-col gap-16 justify-evenly font-mono border-t-8 border-blue-500">
       <Head>
         <title>Andy McGunagle</title>
         <meta name="description" content="Andy McGunagle's Personal Website" />
@@ -27,12 +27,12 @@ export default function Home() {
 
       <footer className="flex justify-center">
         <a
-          className="text-center cursor-pointer"
+          className="text-center cursor-pointer text-sm font-thin"
           href="https://github.com/andymcgunagle/andys-personal-website"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Check out the code for this site!
+          (Click here to check out the code for this site 🤘)
         </a>
       </footer>
 
