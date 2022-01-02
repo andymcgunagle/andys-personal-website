@@ -36,7 +36,7 @@ export default function Connect() {
         heading="Connect with me on..."
         items={sites}
       />
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap justify-center items-center gap-2">
         <p>...or shoot me an email at</p>
         <span
           onClick={copyEmailAddress}
