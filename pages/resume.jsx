@@ -25,7 +25,7 @@ export default function Resume() {
         <header className="flex flex-col items-center gap-4">
           <Heading />
           <div className="flex flex-wrap-reverse justify-center items-center gap-4">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col items-center justify-evenly md:flex-row gap-4 w-full">
               <IconAndText icon="place" text="San Diego, CA" />
               <IconAndText icon="email" text="amcgunagle@gmail.com" />
               <IconAndText icon="phone" text="(707) 490-8131" />
