@@ -22,14 +22,16 @@ export default function Resume() {
 
       <div className="flex flex-col gap-4 px-8 py-6 md:px-12 max-w-[750px] m-auto shadow-2xl bg-gray-900 text-gray-50 md:rounded-b-lg border-t-8 border-blue-500">
 
-        <header className="grid grid-cols-2 gap-4">
-          <div className="flex flex-col gap-4">
-            <Heading />
-            <IconAndText icon="place" text="San Diego, CA" />
-            <IconAndText icon="email" text="amcgunagle@gmail.com" />
-            <IconAndText icon="phone" text="(707) 490-8131" />
+        <header className="flex flex-col items-center gap-4">
+          <Heading />
+          <div className="flex flex-wrap-reverse justify-center items-center gap-4">
+            <div className="flex flex-col gap-4">
+              <IconAndText icon="place" text="San Diego, CA" />
+              <IconAndText icon="email" text="amcgunagle@gmail.com" />
+              <IconAndText icon="phone" text="(707) 490-8131" />
+            </div>
+            <Avatar additionalStyles="border-2 border-blue-700" />
           </div>
-          <Avatar additionalStyles="border-2 border-blue-700" />
         </header>
 
         <main className="flex flex-col gap-6">
