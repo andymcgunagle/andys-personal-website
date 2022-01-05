@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-export function useConfirmCopy() {
+export function useCopyAndConfirm(text) {
   const [confirmCopy, setConfirmCopy] = useState(false);
 
-  const copyEmailAddress = (e) => {
-    navigator.clipboard.writeText("amcgunagle@gmail.com");
+  const copyText = () => {
+    navigator.clipboard.writeText(text);
     setConfirmCopy(true);
   };
 
@@ -16,5 +16,5 @@ export function useConfirmCopy() {
     return () => clearTimeout(timeout);
   }, [confirmCopy]);
 
-  return { confirmCopy, copyEmailAddress };
+  return { confirmCopy, copyText };
 };

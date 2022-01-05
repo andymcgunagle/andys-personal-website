@@ -1,4 +1,4 @@
-import { useConfirmCopy } from "../../hooks/useConfirmCopy.jsx";
+import { useCopyAndConfirm } from "../../hooks/useCopyAndConfirm.jsx";
 import ConfirmCopy from "../reusables/ConfirmCopy.jsx";
 
 import ContentSection from './ContentSection/ContentSection.jsx';
@@ -17,7 +17,7 @@ const sites = [
 ];
 
 export default function Connect() {
-  const { confirmCopy, copyEmailAddress } = useConfirmCopy();
+  const { confirmCopy, copyText } = useCopyAndConfirm("amcgunagle@gmail.com");
 
   return (
     <div className="flex flex-col items-center gap-4">
@@ -28,7 +28,7 @@ export default function Connect() {
       <div className="flex flex-wrap justify-center items-center gap-2">
         <p>...or shoot me an email at</p>
         <div
-          onClick={copyEmailAddress}
+          onClick={copyText}
           className="flex items-center gap-2 cursor-pointer"
         >
           <p>

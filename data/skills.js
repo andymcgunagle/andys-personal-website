@@ -84,7 +84,7 @@ export const skills = [
     link: "#",
   },
   {
-    skill: "Live demonstrations",
+    skill: "Live software demonstrations",
     link: "#",
   },
 ];

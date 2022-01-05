@@ -1,15 +1,12 @@
 import Head from 'next/head';
 
-import { experience, skills } from "../data/index.js";
-
 import Avatar from "../components/reusables/Avatar.jsx";
-import Card from "../components/resume/Card.jsx";
-import ContentSection from "../components/resume/ContentSection.jsx";
-import IconAndText from "../components/resume/IconAndText.jsx";
-import Job from "../components/resume/Job.jsx";
-import Skill from "../components/resume/Skill.jsx";
-import Summary from "../components/resume/Summary.jsx";
+import ContactInfo from "../components/resume/ContactInfo.jsx";
+import Education from "../components/resume/Education.jsx";
+import Experience from "../components/resume/Experience.jsx";
 import Heading from "../components/reusables/Heading.jsx";
+import Skills from "../components/resume/Skills.jsx";
+import Summary from "../components/resume/Summary.jsx";
 
 export default function Resume() {
   return (
@@ -25,47 +22,16 @@ export default function Resume() {
         <header className="flex flex-col items-center gap-4">
           <Heading />
           <div className="flex flex-wrap-reverse justify-center items-center gap-4">
-            <div className="flex flex-col items-center justify-evenly md:flex-row gap-4 w-full">
-              <IconAndText icon="place" text="San Diego, CA" />
-              <IconAndText icon="email" text="amcgunagle@gmail.com" />
-              <IconAndText icon="phone" text="(707) 490-8131" />
-            </div>
+            <ContactInfo />
             <Avatar additionalStyles="border-2 border-blue-700" />
           </div>
         </header>
 
         <main className="flex flex-col gap-6">
           <Summary />
-
-          <ContentSection icon="work" title="Experience">
-            <div className="flex flex-col gap-4">
-              {experience.map((item, index) => <Job key={index} {...item} />)}
-            </div>
-          </ContentSection>
-
-          <ContentSection icon="school" title="Education">
-            <Card>
-              <div className="flex flex-col gap-2">
-                <div className="flex items-baseline gap-2">
-                  <h2 className="text-lg font-bold">
-                    California Polytechnic State University - San Luis Obispo
-                  </h2>
-                  <p className="text-xs text-center text-gray-300">
-                    Class of 2013
-                  </p>
-                </div>
-                <p className="text-sm text-gray-300">
-                  Bachelor of Science in Kinesiology
-                </p>
-              </div>
-            </Card>
-          </ContentSection>
-
-          <ContentSection icon="code" title="Skills">
-            <div className="flex flex-wrap gap-1 md:gap-2">
-              {skills.map((item, index) => <Skill key={index} {...item} />)}
-            </div>
-          </ContentSection>
+          <Experience />
+          <Education />
+          <Skills />
         </main>
 
       </div>
