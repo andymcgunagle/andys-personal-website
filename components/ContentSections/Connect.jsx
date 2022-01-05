@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+import { useConfirmCopy } from "../../hooks/useConfirmCopy.jsx";
+import ConfirmCopy from "../reusables/ConfirmCopy.jsx";
+
 import ContentSection from './ContentSection/ContentSection.jsx';
 
 const sites = [
@@ -15,20 +17,7 @@ const sites = [
 ];
 
 export default function Connect() {
-  const [confirmCopy, setConfirmCopy] = useState(false);
-
-  const copyEmailAddress = (e) => {
-    navigator.clipboard.writeText("amcgunagle@gmail.com");
-    setConfirmCopy(true);
-  };
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setConfirmCopy(false);
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, [confirmCopy]);
+  const { confirmCopy, copyEmailAddress } = useConfirmCopy();
 
   return (
     <div className="flex flex-col items-center gap-4">
@@ -45,18 +34,12 @@ export default function Connect() {
           <p>
             amcgunagle@gmail.com
           </p>
-          <span class="material-icons text-sm">
+          <span className="material-icons text-sm">
             content_copy
           </span>
         </div>
       </div>
-      {
-        confirmCopy ?
-          <p className="fixed top-4 bg-green-100 border-2 border-green-700 text-green-700 p-2 rounded-md animate-fade-out text-center">
-            Email address copied 👍
-          </p>
-          : null
-      }
+      <ConfirmCopy confirmCopy={confirmCopy} />
     </div>
   );
 };

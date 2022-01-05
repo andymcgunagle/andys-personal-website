@@ -1,13 +1,15 @@
 import Head from 'next/head';
-import HeadingAndAvatar from '../components/HeadingAndAvatar/HeadingAndAvatar.jsx';
+
+import Heading from "../components/reusables/Heading.jsx";
 import Connect from '../components/ContentSections/Connect.jsx';
 import MyProjects from '../components/ContentSections/MyProjects.jsx';
 import Specialties from '../components/ContentSections/Specialties.jsx';
-import FixedMenuButton from "../components/FixedMenuButton.jsx";
+import Avatar from "../components/reusables/Avatar.jsx";
+// import FixedMenuButton from "../components/reusables/FixedMenuButton.jsx";
 
 export default function Home() {
   return (
-    <div className="min-h-screen px-4 py-8 flex flex-col gap-16 justify-evenly font-mono border-t-8 border-blue-500">
+    <div className="min-h-screen px-4 py-8 flex flex-col gap-16 justify-evenly border-t-8 border-blue-500">
       <Head>
         <title>Andy McGunagle</title>
         <meta name="description" content="Andy McGunagle's Personal Website" />
@@ -15,11 +17,12 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </Head>
 
-      <header>
-        <HeadingAndAvatar />
+      <header className="space-y-4">
+        <Heading />
+        <Avatar />
       </header>
 
-      <main className="flex flex-col font-mono gap-10">
+      <main className="flex flex-col gap-10">
         <Specialties />
         <MyProjects />
         <Connect />

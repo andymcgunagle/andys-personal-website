@@ -15,6 +15,9 @@ module.exports = {
       animation: {
         'fade-out': 'fadeOut 3.05s linear',
       },
+      fontFamily: {
+        OpenSans: ["Open Sans", "cursive"],
+      },
     },
   },
   plugins: [],
