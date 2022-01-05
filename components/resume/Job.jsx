@@ -11,7 +11,7 @@ export default function Job({
 }) {
   return (
     <Card>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
           <Link
             href={link}
@@ -22,11 +22,11 @@ export default function Job({
           <span className="material-icons text-sm">
             verified
           </span>
-          <p className="text-xs">
-            {startDate} - {endDate}
-          </p>
+          <div className="flex flex-wrap text-xs text-gray-300">
+            <span>{startDate} -</span> <span>{endDate}</span>
+          </div>
         </div>
-        <p className="text-sm">
+        <p className="text-sm text-gray-300">
           {title}
         </p>
       </div>

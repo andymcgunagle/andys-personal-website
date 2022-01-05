@@ -1,74 +1,90 @@
 export const skills = [
   {
-    technology: "HTML",
+    skill: "HTML",
     link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
-    technology: "CSS",
+    skill: "CSS",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    technology: "JavaScript",
+    skill: "JavaScript",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    technology: "React",
+    skill: "React",
     link: "https://beta.reactjs.org/",
   },
   {
-    technology: "Node.js",
+    skill: "Node.js",
     link: "https://nodejs.org/en/",
   },
   {
-    technology: "Next.js",
+    skill: "Next.js",
     link: "https://nextjs.org/",
   },
   {
-    technology: "Redux Toolkit",
+    skill: "Redux Toolkit",
     link: "https://redux-toolkit.js.org/",
   },
   {
-    technology: "Firebase",
+    skill: "Firebase",
     link: "https://firebase.google.com/",
   },
   {
-    technology: "Express",
+    skill: "Express",
     link: "https://expressjs.com/",
   },
   {
-    technology: "styled-components",
+    skill: "styled-components",
     link: "https://styled-components.com/",
   },
   {
-    technology: "Tailwind CSS",
+    skill: "Tailwind CSS",
     link: "https://tailwindcss.com/",
   },
   {
-    technology: "CSS Modules",
+    skill: "CSS Modules",
     link: "https://github.com/css-modules/css-modules",
   },
   {
-    technology: "PostgreSQL",
+    skill: "PostgreSQL",
     link: "https://www.postgresql.org/",
   },
   {
-    technology: "MongoDB",
+    skill: "MongoDB",
     link: "https://www.mongodb.com/",
   },
   {
-    technology: "Mongoose",
+    skill: "Mongoose",
     link: "https://mongoosejs.com/",
   },
   {
-    technology: "Twilio",
+    skill: "Twilio",
     link: "https://www.twilio.com/",
   },
   {
-    technology: "HubSpot",
+    skill: "HubSpot",
     link: "https://www.hubspot.com/",
   },
   {
-    technology: "Salesforce",
+    skill: "Salesforce",
     link: "https://www.salesforce.com/",
+  },
+  {
+    skill: "Sales",
+    link: "#",
+  },
+  {
+    skill: "Email marketing",
+    link: "#",
+  },
+  {
+    skill: "Blogging",
+    link: "#",
+  },
+  {
+    skill: "Live demonstrations",
+    link: "#",
   },
 ];

@@ -45,16 +45,16 @@ export default function Resume() {
 
           <ContentSection icon="school" title="Education">
             <Card>
-              <div>
+              <div className="flex flex-col gap-2">
                 <div className="flex items-baseline gap-2">
                   <h2 className="text-lg font-bold">
                     California Polytechnic State University - San Luis Obispo
                   </h2>
-                  <p className="text-xs text-center">
+                  <p className="text-xs text-center text-gray-300">
                     Class of 2013
                   </p>
                 </div>
-                <p className="text-sm">
+                <p className="text-sm text-gray-300">
                   Bachelor of Science in Kinesiology
                 </p>
               </div>
@@ -62,7 +62,7 @@ export default function Resume() {
           </ContentSection>
 
           <ContentSection icon="code" title="Skills">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-1 md:gap-2">
               {skills.map((item, index) => <Skill key={index} {...item} />)}
             </div>
           </ContentSection>
