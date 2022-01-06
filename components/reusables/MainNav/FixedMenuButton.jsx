@@ -8,7 +8,7 @@ export default function FixedMenuButton({ showMainNav, setShowMainNav }) {
     const scrollListener = () => setScrollPosition(window.scrollY);
     window.addEventListener('scroll', scrollListener);
 
-    scrollPosition > (window.innerHeight + 200) ?
+    scrollPosition > (window.innerHeight + 150) ?
       setAltButtonStyles(true)
       : setAltButtonStyles(false);
 
