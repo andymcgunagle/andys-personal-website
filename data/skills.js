@@ -72,6 +72,10 @@ export const skills = [
     link: "https://www.salesforce.com/",
   },
   {
+    skill: "Intercom",
+    link: "https://www.intercom.com/",
+  },
+  {
     skill: "Sales",
     link: "#",
   },

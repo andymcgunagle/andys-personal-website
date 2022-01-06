@@ -19,7 +19,7 @@ export default function MainNav() {
   const router = useRouter()
 
   return (
-    <nav className="flex justify-center items-center">
+    <nav className="flex justify-center items-center print:hidden">
       <ol className="flex flex-col gap-4">
         {navItems.map(item => item.path !== router.pathname ? <NavItem key={item.path} {...item} /> : null)}
       </ol>

@@ -6,7 +6,7 @@ export default function Education() {
     <ContentSection icon="school" title="Education">
       <Card>
         <div className="flex flex-col gap-2">
-          <div className="flex items-baseline gap-2">
+          <div className="flex justify-between items-baseline gap-2">
             <h2 className="text-lg font-bold">
               California Polytechnic State University - San Luis Obispo
             </h2>
