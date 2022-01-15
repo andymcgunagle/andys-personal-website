@@ -1,4 +1,4 @@
-import { experience } from "../../data/index.js"
+import { experience } from "../../data/index"
 
 import ContentSection from "./ContentSection";
 import Job from "./Job";

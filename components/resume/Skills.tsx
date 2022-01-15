@@ -1,4 +1,4 @@
-import { skills } from "../../data/index.js";
+import { skills } from "../../data/index";
 
 import ContentSection from "./ContentSection";
 import Skill from "./Skill";
