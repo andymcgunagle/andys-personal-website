@@ -1,6 +1,6 @@
 import Link from "./Link";
 import Card from "./Card";
-import { Job } from "../../data";
+import { JobObject } from "../../data";
 
 export default function Job({
   companyName,
@@ -10,7 +10,7 @@ export default function Job({
   location,
   startDate,
   title,
-}: Job) {
+}: JobObject) {
   return (
     <Card>
       <div className="flex flex-col gap-2">

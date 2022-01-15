@@ -1,4 +1,4 @@
-export const experience: Job[] = [
+export const experience: JobObject[] = [
   {
     companyName: "Xplor Technologies",
     link: "https://www.xplortechnologies.com/us",
@@ -64,7 +64,7 @@ export const experience: Job[] = [
   // },
 ];
 
-export interface Job {
+export interface JobObject {
   companyName: string,
   link: string,
   title: string,
