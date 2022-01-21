@@ -14,8 +14,8 @@ const navItems = [
     icon: "description",
   },
   {
-    path: "/articles",
-    text: "Articles",
+    path: "/articles-and-notes",
+    text: "Articles & Notes",
     icon: "local_library",
   },
 ];

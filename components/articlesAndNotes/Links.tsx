@@ -1,18 +1,18 @@
-import { TitleAndLink } from "../../data/articles";
+import { TitleAndLink } from "../../data/articlesAndNotes";
 
-export default function Links({ articles }: LinksProps) {
+export default function Links({ articlesAndNotes }: LinksProps) {
   return (
     <>
-      {articles.map((article, index) => (
+      {articlesAndNotes.map((item, index) => (
         <li key={index}>
           <a
             key={index}
-            href={article.link}
+            href={item.link}
             rel="noopener noreferrer"
             target="_blank"
             className="font-thin"
           >
-            {article.title}
+            {item.title}
           </a>
         </li>
       ))}
@@ -21,5 +21,5 @@ export default function Links({ articles }: LinksProps) {
 };
 
 interface LinksProps {
-  articles: TitleAndLink[],
+  articlesAndNotes: TitleAndLink[],
 };
