@@ -31,7 +31,7 @@ export default function Layout({
 interface LayoutProps {
   additionalInnerStyles?: string,
   additionalOuterStyles?: string,
-  children: JSX.Element[],
+  children: JSX.Element[] | JSX.Element,
   content: string,
   title: string,
 };

@@ -13,6 +13,11 @@ const navItems = [
     text: "Resume",
     icon: "description",
   },
+  {
+    path: "/articles",
+    text: "Articles",
+    icon: "local_library",
+  },
 ];
 
 export default function MainNav() {

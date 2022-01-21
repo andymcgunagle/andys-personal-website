@@ -15,4 +15,4 @@ interface LinkProps {
   href: string,
   styles: string,
   children: string,
-}
+};
