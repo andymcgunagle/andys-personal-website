@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply bg-gray-900 text-gray-50 overscroll-y-none font-OpenSans;
+    @apply bg-gray-900 text-gray-50 overscroll-none font-OpenSans;
   }
 }

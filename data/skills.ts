@@ -20,8 +20,16 @@ export const skills: Skill[] = [
     link: "https://nodejs.org/en/",
   },
   {
+    skill: "TypeScript",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
     skill: "Next.js",
     link: "https://nextjs.org/",
+  },
+  {
+    skill: "Redux",
+    link: "https://redux.js.org/",
   },
   {
     skill: "Redux Toolkit",
@@ -84,7 +92,7 @@ export const skills: Skill[] = [
     link: "#",
   },
   {
-    skill: "Blogging",
+    skill: "Writing/Blogging",
     link: "#",
   },
   {
