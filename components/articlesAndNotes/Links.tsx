@@ -1,10 +1,10 @@
-import { TitleAndLink } from "../../data/articlesAndNotes";
+import { Content } from "../../data/articlesAndNotes";
 
-export default function Links({ articlesAndNotes }: LinksProps) {
+export default function Links({ content }: LinksProps) {
   return (
     <>
-      {articlesAndNotes.map((item, index) => (
-        <li key={index}>
+      {content.map((item, index) => (
+        <li key={index} className="px-4 py-2 rounded-full hover:bg-gray-500 text-center">
           <a
             key={index}
             href={item.link}
@@ -21,5 +21,5 @@ export default function Links({ articlesAndNotes }: LinksProps) {
 };
 
 interface LinksProps {
-  articlesAndNotes: TitleAndLink[],
+  content: Content[],
 };

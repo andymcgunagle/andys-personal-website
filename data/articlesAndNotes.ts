@@ -1,7 +1,7 @@
 export const articlesAndNotes: ArticlesAndNotesCategory[] = [
   {
     name: 'coding',
-    articlesAndNotes: [
+    content: [
       {
         title: 'Coding - Learn the Basics in 7 Days',
         link: 'https://www.linkedin.com/pulse/coding-learn-basics-7-days-andy-mcgunagle/',
@@ -30,7 +30,7 @@ export const articlesAndNotes: ArticlesAndNotesCategory[] = [
   },
   {
     name: 'strength training',
-    articlesAndNotes: [
+    content: [
       {
         title: 'Max-out, Back-off: A Simple Protocol for Size and Strength',
         link: 'https://www.elitefts.com/education/training/max-out-back-off-a-simple-protocol-for-size-and-strength/',
@@ -47,12 +47,12 @@ export const articlesAndNotes: ArticlesAndNotesCategory[] = [
   },
 ];
 
-export interface TitleAndLink {
+export interface Content {
   title: string,
   link: string,
 };
 
 interface ArticlesAndNotesCategory {
   name: string,
-  articlesAndNotes: TitleAndLink[]
+  content: Content[]
 };

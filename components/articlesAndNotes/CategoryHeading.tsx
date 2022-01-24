@@ -1,6 +1,6 @@
 export default function CategoryHeading({ categoryName }: CategoryHeadingProps) {
   return (
-    <h2 className="text-2xl">
+    <h2 className="text-2xl font-bold">
       {categoryName
         .split(' ')
         .map(word => word

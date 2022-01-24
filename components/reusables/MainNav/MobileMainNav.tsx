@@ -10,7 +10,7 @@ export default function MobileMainNav() {
     <>
       {
         showMainNav ?
-          <div className="fixed top-0 w-full h-full flex justify-center items-center bg-gray-900 p-4">
+          <div className="fixed top-0 w-full h-full flex justify-center items-center bg-gray-900 p-4 border-t-8 border-blue-500">
             <MainNav />
           </div>
           : null
