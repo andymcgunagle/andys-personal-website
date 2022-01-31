@@ -1,7 +1,7 @@
 import CategoryHeading from "../components/articlesAndNotes/CategoryHeading";
 import Links from "../components/articlesAndNotes/Links";
-import Heading from "../components/reusables/Heading";
-import Layout from "../components/reusables/Layout";
+import Heading from "../components/_reusables/Heading";
+import Layout from "../components/_reusables/Layout";
 import { articlesAndNotes } from "../data";
 
 export default function Articles() {

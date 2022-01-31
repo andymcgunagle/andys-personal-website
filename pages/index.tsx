@@ -1,9 +1,9 @@
-import Layout from "../components/reusables/Layout";
-import Heading from "../components/reusables/Heading";
+import Layout from "../components/_reusables/Layout";
+import Heading from "../components/_reusables/Heading";
 import Connect from '../components/ContentSections/Connect';
 import MyProjects from '../components/ContentSections/MyProjects';
 import Specialties from '../components/ContentSections/Specialties';
-import Avatar from "../components/reusables/Avatar";
+import Avatar from "../components/_reusables/Avatar";
 
 export default function Home() {
   return (

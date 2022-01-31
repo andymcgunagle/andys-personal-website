@@ -1,9 +1,9 @@
-import Layout from "../components/reusables/Layout";
-import Avatar from "../components/reusables/Avatar";
+import Layout from "../components/_reusables/Layout";
+import Avatar from "../components/_reusables/Avatar";
 import ContactInfo from "../components/resume/ContactInfo";
 import Education from "../components/resume/Education";
 import Experience from "../components/resume/Experience";
-import Heading from "../components/reusables/Heading";
+import Heading from "../components/_reusables/Heading";
 import Skills from "../components/resume/Skills";
 import Summary from "../components/resume/Summary";
 
