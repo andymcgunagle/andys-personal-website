@@ -6,7 +6,7 @@ export const experience: JobObject[] = [
     startDate: "April 2021",
     endDate: "Present",
     location: "Remote",
-    description: "Valued contributer of - and unofficial \"tech handyman\" for - a rapidly growing sales team. Helped organize and refine sales processes as multiple brands converged.",
+    description: "Valued contributor - and unofficial \"tech handyman\" - for a rapidly growing sales team. Helped organize and refine sales processes as multiple brands converged.",
   },
   {
     companyName: "BrandBot",

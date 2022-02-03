@@ -36,6 +36,14 @@ export const skills: Skill[] = [
     link: "https://redux-toolkit.js.org/",
   },
   {
+    skill: "Git",
+    link: "https://git-scm.com/",
+  },
+  {
+    skill: "GitHub",
+    link: "https://github.com/andymcgunagle",
+  },
+  {
     skill: "Firebase",
     link: "https://firebase.google.com/",
   },
