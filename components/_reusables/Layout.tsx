@@ -19,7 +19,7 @@ export default function Layout({
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </Head>
 
-      <div className={`flex flex-col gap-4 p-8 border-t-8 border-blue-500 ${additionalInnerStyles}`}>
+      <div className={`flex flex-col gap-4 p-8 pb-24 md:pb-8 border-t-8 border-blue-500 ${additionalInnerStyles}`}>
         {children}
       </div>
       <MobileMainNav />
